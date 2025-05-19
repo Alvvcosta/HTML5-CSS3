@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #e5c29c;
+  --secondary-color: #d79875;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--primary-color);
+  margin: 0;
+  padding: 0;
+  color: #593325;
+}
+header {
+  text-align: center;
+  padding: 20px;
+}
+h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+h2 {
+  font-size: 2em;
+  color: #a66346;
+}
+.description {
+  height: 100vh;
+  font-size: 1.2em;
+}
+.contact {
+  background-color: #d99873;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 300px;
+}
+.contact p {
+  margin: 5px 0;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #a66249;
+  color: white;
+}

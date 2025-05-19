@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixa </title>
+    <style>
+        h1 {
+            background-color: lightgray;
+            height: 300px;/*altura*/
+            width: 300px;/*largura*/
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+            padding-top: 10px;
+            padding-right: 10 px;
+            padding-bottom: 10 px;
+            padding-left: 10px;
+
+            margin-top: 10px; /* configurando a margem de cima*/
+            margin-right: 10px;   /* configurando a margem direita*/
+            margin-bottom: 10px;/* configurando a margem de baixo */
+            margin-left: 10px;/* configurando a margem esquerda*/
+
+            /*margin: auto; */  /* para todo elemento que quero no meio da tela */
+
+            outline-width: 5px;/* inserida fora da borda  e dentro da margem*/
+            outline-style: dashed;
+            outline-color: salmon;
+
+            /*Simplificando border, padding, margin e outline usando shorthand */ 
+            /*border: 10px solid darkslategray*/
+            /*padding: 10px 10px 10px 10px ( se forem iguais podemos informar apenas uma vez)
+            Quando adicionamos dois valores, o de cima e o de baixo ficam iguais , e o das laterais ficam iguais*/
+
+            /*margin: 20px 20px 40px 20px*/ 
+            /* podemos deixar auto em alguma : 
+            margin: 20px auto 40px 20px */
+
+            /*border: 10px solid darkslategray */
+            /* margin: 10px*/
+
+
+
+        }
+        a {
+            border-width: 10px;
+            /* posso mudar o display para block : 
+            display: block 
+            E ainda adicionar o inline-block
+            display: inline-block ( Assim posso adicionar e editar bordas)*/
+
+            border-style: solid;
+            border-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</box-level></h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>

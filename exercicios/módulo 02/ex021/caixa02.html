@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grouping Tags</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: dimgray;
+      }
+      header h1 {
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+      }
+      header {
+        color: dimgray;
+      }
+
+      nav {
+        background-color: rgb(102, 102, 102);
+        padding: 3px;
+        box-shadow: 1px 1px 6px 1px black;
+      }
+      nav > a {
+        text-decoration: none; /* não mostrar formatação*/
+        color: white;
+        font-weight: bold; /*negrito*/
+        margin-right: 30px;
+      }
+      nav > a:hover {
+        text-decoration: underline; /*sublinhado*/
+      }
+      main {
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 10px 0px;
+        box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.322);
+      }
+      article {
+        background-color: lightgray;
+      }
+      footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 1px;
+        margin: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!--  cabeçalho -->
+      <h1>Meu site</h1>
+      <nav>
+        <!-- /* Botões de navegação*/ -->
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+      </nav>
+    </header>
+    <main>
+      <section id="assuntos">
+        <p>Esportes Política Tecnologia</p>
+      </section>
+      <section id="noticias">
+        <article>
+          <h2>Notícia sobre o Brasil</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+            soluta vel quisquam provident facere voluptas enim velit itaque
+            necessitatibus quia nesciunt aliquid officia, sapiente eius
+            exercitationem dolore laudantium tempore sequi!
+          </p>
+          <aside>
+            <!--  conteúdo periférico ao artigo -->
+            <p>Artigo escrito por um qualquer da Silva</p>
+          </aside>
+        </article>
+        <article></article>
+      </section>
+    </main>
+    <footer>
+      <!-- rodapé -->
+      <p>Desenvolvido por Alvv</p>
+    </footer>
+  </body>
+</html>

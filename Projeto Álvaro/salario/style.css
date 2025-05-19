@@ -1,0 +1,27 @@
+
+
+
+body {
+    text-align:center;
+    background-image: linear-gradient(90deg,red,orange,yellow,green,blue,indigo,violet);
+  }
+  .titulo {
+    color:white;
+    font-size:80px;
+    font-style:bold;
+  }
+  .imge {
+    heith:40px;
+    width:400px;
+  }
+  .botao {
+    font-size:30px;
+    color:white;
+    background-color:green;
+    height:40px;
+    width:400px;
+  }
+  .chamada {
+    text-align:center;
+    align-itens:center;
+  }
