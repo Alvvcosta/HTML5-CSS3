@@ -11,6 +11,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position:relative
         }
         td, th {
             border: 1px solid black;
@@ -19,6 +20,26 @@
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+
+        /*O recurso abaixo vai fixar o cabeçalho da minha tabela ( preciso inserir o positon:relative na table antes)*/
+        thead > tr > th {
+            position:sticky;
+            top:-1px;
+            background-color: #383838;
+        }
+
+
+
+
+
+
+
+        /* O recurso abaixo serve para usar linha zebrada na tabela => :nth-child(2n) a cada duas linhas-pula uma e zebra a abaixo 
+        Posso usar par(even) ou ímpar(odd) ou ainda 2n-1 para impar  */
+
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
         }
         td.num {
             text-align: right;
@@ -58,7 +79,6 @@
             <tr>
                 <td>São Paulo</td>
                 <td class="num">45 919 049</td>
-                
             </tr>
             <tr>
                 <td>Minas Gerais</td>
@@ -67,15 +87,111 @@
             <tr>
                 <td>Rio de Janeiro</td>
                 <td class="num">17 264 943</td>
-
             </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">13 589 330</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">1 565 854</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">8 129 390</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">3 105 575</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">1 665 906</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">13 874 272</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">3 116 348</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">9 973 283</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">1 326 172</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">9 498 237</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">14 783 970</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">5 338 463</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">7 392 461</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">7 933 817</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">6 714 730</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">1 003 376</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">14 691 156</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">8 671 014</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">9 562 471</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="num">5 032 642</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="num">2 419 763</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">10 863 731</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="num">13 910 244</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">5 917 880</td>
+            </tr>
+            
 
         </tbody>
         <tfoot>
             <tr>
                 <th scope="row">Total de Habitantes</th>
                 <!--    SCOPE   - serve para ajudar os mecanismos de busca a entender melhor a tabela  -->
-                <td class="num"><strong>210 147 125</strong></td>
+                <td class="num"><strong>264.432.868</strong></td>
             </tr>
 
         </tfoot>
